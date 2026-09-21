@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아직 오지 않은 시간에게 | 시간 우체국</title>
+  <meta name="description" content="현재의 나에게서 미래의 나에게, 시간을 넘어 도착하는 편지. 아직 오지 않은 시간에게, 지금의 마음을 봉인합니다.">
+  <meta name="theme-color" content="#211915">
+  <meta name="view-transition" content="same-origin">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23211915'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%23C5A06A'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@1.3.9/dist/web/static/pretendard.css">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body class="has-hero">
+  <a class="skip-link" href="#main">본문 바로가기</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="header-left">
+        <a class="logo" href="index.html" aria-label="아직 오지 않은 시간에게 — 로비로 이동">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+              <circle cx="12" cy="12" r="9.5" stroke="currentColor" stroke-width="1.2"/>
+              <circle cx="12" cy="12" r="2.2" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="logo-text">
+            <span class="logo-text-full">아직 오지 않은 시간에게</span>
+            <span class="logo-text-short">시간 우체국</span>
+            <span class="logo-sub">TIME POST OFFICE</span>
+          </span>
+        </a>
+        <span class="office-status">
+          <span class="status-dot" aria-hidden="true"></span>
+          24시간 연중무휴 접수 중
+        </span>
+      </div>
+
+      <div class="header-right">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="메뉴 열기">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="site-nav" id="primary-nav" aria-label="주요 메뉴">
+          <ul class="nav-list">
+            <li><a href="index.html" aria-current="page">로비</a></li>
+            <li><a href="write.html">접수 창구</a></li>
+            <li><a href="archive.html">우편함</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- 로비 입구 — 짧은 인사와 오늘의 소인, 그리고 실제로 접수를 받는 우체통 -->
+    <section class="hero" aria-label="시간 우체국 로비">
+      <div class="container hero-inner">
+        <div class="postmark">
+          <span class="postmark-date" id="postmark-date">·</span>
+          <span class="postmark-time" id="postmark-time">--:--</span>
+        </div>
+
+        <span class="hero-eyebrow">TIME POST OFFICE · 우체국 로비</span>
+
+        <h1 class="hero-title">지금 이 마음을,<br><em>아직 오지 않은 시간</em>에게</h1>
+
+        <p class="hero-lede">
+          이곳은 실제로 운영되는 시간 우체국입니다.<br class="br-desktop">
+          지금 접수한 편지는 정해둔 날짜에 당신의 우편함으로 도착합니다.
+        </p>
+
+        <a class="mailbox" href="write.html" id="lobby-mailbox" aria-label="우체통 — 편지 접수 창구로 이동">
+          <svg class="mailbox-svg" viewBox="0 0 160 200" aria-hidden="true">
+            <rect class="mailbox-post" x="72" y="150" width="16" height="48" rx="3"/>
+            <rect class="mailbox-body" x="18" y="46" width="124" height="96" rx="20"/>
+            <rect class="mailbox-slot" x="46" y="74" width="68" height="8" rx="4"/>
+            <g class="mailbox-flap-group">
+              <rect class="mailbox-flap" x="46" y="61" width="68" height="16" rx="5"/>
+            </g>
+            <circle class="mailbox-badge" cx="80" cy="114" r="8"/>
+            <g class="mailbox-envelope">
+              <rect x="61" y="18" width="38" height="25" rx="2"/>
+              <path d="M61 20L80 35L99 20"/>
+            </g>
+          </svg>
+          <span class="mailbox-caption">여기에 편지를 넣어보세요</span>
+        </a>
+      </div>
+
+      <div id="hero-sentinel" aria-hidden="true"></div>
+    </section>
+
+    <!-- 창구 안내판 — 실제 기능으로 바로 연결되는 두 개의 창구 -->
+    <section class="counter-section" aria-label="창구 안내">
+      <div class="container">
+        <span class="section-eyebrow">COUNTER GUIDE</span>
+        <h2 class="section-title">오늘의 창구 안내</h2>
+        <div class="counter-board">
+          <a class="counter-item" href="write.html">
+            <span class="counter-no">1번 창구</span>
+            <span class="counter-name">편지 접수</span>
+            <span class="counter-desc">미래의 나에게 보낼 편지를 지금 접수합니다.</span>
+            <span class="counter-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="counter-item" href="archive.html">
+            <span class="counter-no">2번 창구</span>
+            <span class="counter-name">우편함 확인</span>
+            <span class="counter-desc">보관 중이거나 도착한 편지를 확인합니다.</span>
+            <span class="counter-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 배송 현황 — 실제 데이터 기반 -->
+    <section class="status-section" aria-label="배송 현황">
+      <div class="container">
+        <span class="section-eyebrow">DELIVERY STATUS</span>
+        <h2 class="section-title">배송 현황</h2>
+
+        <div class="status-board" aria-live="polite">
+          <div class="status-tile">
+            <span class="status-value" id="stat-transit">0</span>
+            <span class="status-label">시간 보관 중</span>
+          </div>
+          <div class="status-tile">
+            <span class="status-value" id="stat-arrived">0</span>
+            <span class="status-label">도착 완료</span>
+          </div>
+          <div class="status-tile">
+            <span class="status-value" id="stat-nearest">—</span>
+            <span class="status-label">가장 가까운 도착까지</span>
+          </div>
+        </div>
+
+        <div class="recent-arrival" id="recent-arrival" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- 운영 안내 -->
+    <section class="process" aria-label="시간 우체국 이용 안내">
+      <div class="container">
+        <span class="section-eyebrow">HOW IT WORKS</span>
+        <h2 class="process-title">시간 우체국 이용 안내</h2>
+        <ol class="process-list">
+          <li class="process-item">
+            <span class="process-num">01</span>
+            <h3 class="process-heading">접수</h3>
+            <p class="process-desc">1번 창구에서 지금 이 순간의 마음을 편지로 접수합니다.</p>
+          </li>
+          <li class="process-item">
+            <span class="process-num">02</span>
+            <h3 class="process-heading">봉인</h3>
+            <p class="process-desc">도착 예정일을 정하면, 편지에 우편번호가 부여되고 봉인됩니다.</p>
+          </li>
+          <li class="process-item">
+            <span class="process-num">03</span>
+            <h3 class="process-heading">보관</h3>
+            <p class="process-desc">도착 예정일까지 편지는 시간 속에 조용히 보관됩니다.</p>
+          </li>
+          <li class="process-item">
+            <span class="process-num">04</span>
+            <h3 class="process-heading">수령</h3>
+            <p class="process-desc">도착 예정일이 되면 2번 창구(우편함)에서 편지를 열어볼 수 있습니다.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-mark">아직 오지 않은 시간에게</p>
+      <p class="footer-tagline">현재의 마음을 미래로 보내는, 작은 시간 우체국</p>
+      <p class="footer-meta">&copy; <span id="footer-year"></span> Time Post Office</p>
+    </div>
+  </footer>
+
+  <script src="js/storage.js" defer></script>
+  <script src="js/clock.js" defer></script>
+  <script src="js/home.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>
